@@ -10,4 +10,7 @@ router.post('/register', register);
 // POST /api/auth/login
 router.post('/login', login);
 
+// GET /api/auth/profile
+router.get("/profile", authenticate, userProfile);
+
 module.exports = router;
